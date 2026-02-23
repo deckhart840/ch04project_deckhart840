@@ -8,81 +8,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
+  <title>Making Your Web Pages Responsive</title>
   <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/print.css" media="print" />
 </head>
 
 <body>
-  <header>
-    <h1>Home</h1>
+  <header class="site-header">
+    <h1>Making Your Web Pages Responsive</h1>
   </header>
 
-  <nav aria-label="Primary">
+  <nav class="site-nav" aria-label="Primary">
     <ul class="nav-list">
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" aria-current="page">Home</a></li>
       <li><a href="#">About</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
 
-  <section>
-    <h2>Key Terms</h2>
+  <main class="site-main">
+    <section class="content">
+      <h2>Welcome</h2>
+      <p>
+        This page demonstrates semantic structure, responsive navigation, a flex-based image gallery,
+        and print-friendly styling using external stylesheets.
+      </p>
+    </section>
 
-    <table class="terms-table">
-      <thead>
-        <tr>
-          <th scope="col">Term</th>
-          <th scope="col">Definition</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>deprecated</td>
-          <td>No longer recommended for use; kept mainly for backward compatibility.</td>
-        </tr>
-        <tr>
-          <td>responsive design</td>
-          <td>An approach that adapts layout and content to different screen sizes and devices.</td>
-        </tr>
-        <tr>
-          <td>user experience</td>
-          <td>How a person feels and interacts with a product, including usability and satisfaction.</td>
-        </tr>
-      </tbody>
-    </table>
+    <section id="image-flex" class="gallery" aria-label="Image gallery">
+      <h2>Image Gallery</h2>
 
-    <h2>Working With Images</h2>
+      <figure>
+        <img src="media/doge.png" alt="Doge image (PNG)" />
+        <figcaption>Doge (PNG)</figcaption>
+      </figure>
 
-    <div class="image-row">
-      <img
-        class="fixed-250"
-        src="media/doge.png"
-        alt="Very Doge"
-      />
-      <img
-        class="fixed-250"
-        src="media/doge.jpg"
-        alt="Such Doge"
-      />
-    </div>
+      <figure>
+        <img src="media/doge.jpg" alt="Doge image (JPG)" />
+        <figcaption>Doge (JPG)</figcaption>
+      </figure>
 
-    <p>
-      The PNG file size is 403.1kb and the JPG file size is 46.6kb. Visually, the PNG looks clear,
-      while the JPG looks dull.
-    </p>
+      <figure>
+        <img src="media/longcat.jpg" alt="Longcat image" />
+        <figcaption>Longcat</figcaption>
+      </figure>
 
-    <figure>
-      <img
-        class="fixed-250 bordered-image"
-        src="media/longcat.jpg"
-        alt="Very Long"
-      />
-      <figcaption>So very, very, long..</figcaption>
-    </figure>
-  </section>
+      <figure>
+        <img src="media/dinner.jpg" alt="Dinner cat" />
+        <figcaption>Dinner</figcaption>
+      </figure>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; 2026</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 David Eckhart</p>
   </footer>
 </body>
 </html>

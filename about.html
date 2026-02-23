@@ -10,28 +10,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About</title>
   <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/print.css" media="print" />
 </head>
-
 <body>
-  <header>
+  <header class="site-header">
     <h1>About</h1>
   </header>
 
-  <nav aria-label="Primary">
+  <nav class="site-nav" aria-label="Primary">
     <ul class="nav-list">
       <li><a href="index.html">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
-  <section>
-    <h2>About This Site</h2>
-    <p>Hi. This is My sample website for school.</p>
-  </section>
+  <main class="site-main">
+    <section class="content">
+      <h2>About</h2>
+      <p>This is the About page.</p>
+    </section>
+  </main>
 
-  <footer>
-    <p>&copy; 2026</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 David Eckhart</p>
   </footer>
 </body>
 </html>

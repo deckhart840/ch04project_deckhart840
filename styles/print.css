@@ -1,0 +1,36 @@
+/*
+  Name: David Eckhart
+  Date: 02/23/2026
+  File: styles/print.css
+*/
+
+@page {
+  margin: 0.75in;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #000;
+  background: #fff;
+  display: block; }
+
+nav,
+img,
+figure {
+  display: none !important;
+}
+
+main,
+section {
+  display: block;
+}
+
+header,
+footer {
+  border: none;
+  padding: 0;
+}
+
+section {
+  margin: 0 0 16px 0;
+}
