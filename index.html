@@ -1,0 +1,88 @@
+<!--
+  Name: David Eckhart
+  Date: 02/23/2026
+  File: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Home</h1>
+  </header>
+
+  <nav aria-label="Primary">
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Key Terms</h2>
+
+    <table class="terms-table">
+      <thead>
+        <tr>
+          <th scope="col">Term</th>
+          <th scope="col">Definition</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>deprecated</td>
+          <td>No longer recommended for use; kept mainly for backward compatibility.</td>
+        </tr>
+        <tr>
+          <td>responsive design</td>
+          <td>An approach that adapts layout and content to different screen sizes and devices.</td>
+        </tr>
+        <tr>
+          <td>user experience</td>
+          <td>How a person feels and interacts with a product, including usability and satisfaction.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Working With Images</h2>
+
+    <div class="image-row">
+      <img
+        class="fixed-250"
+        src="media/doge.png"
+        alt="Very Doge"
+      />
+      <img
+        class="fixed-250"
+        src="media/doge.jpg"
+        alt="Such Doge"
+      />
+    </div>
+
+    <p>
+      The PNG file size is 403.1kb and the JPG file size is 46.6kb. Visually, the PNG looks clear,
+      while the JPG looks dull.
+    </p>
+
+    <figure>
+      <img
+        class="fixed-250 bordered-image"
+        src="media/longcat.jpg"
+        alt="Very Long"
+      />
+      <figcaption>So very, very, long..</figcaption>
+    </figure>
+  </section>
+
+  <footer>
+    <p>&copy; 2026</p>
+  </footer>
+</body>
+</html>
